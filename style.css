@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+form {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 2.5rem;
+    background-image: url('yellow_post-it.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    z-index: 2;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+form input, form label, button {
+    font-size: 1.2rem;
+    height: 1.5rem;
+}
+
+form label {
+    margin-top: 12px;
+    text-align: center;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 15px;
+    height: 40px;
+    width: 80px;
+}

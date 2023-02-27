@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a9ca71761a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tasks.css">
+    <title>Tasks</title>
+</head>
+<body>
+    <main>
+        <div id="tasksList">
+        </div>
+    </main>
+    <section class="modal edit hidden">
+        <form id="editForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description">
+            <label for="startDate">Start date and time:</label>
+            <input type="datetime-local" id="startDate" name="startDate">
+            <label for="endDate">End date and time:</label>
+            <input type="datetime-local" id="endDate" name="endDate">
+            <div id="editBtns">
+                <button id="confirmChanges">Confirm changes</button>
+                <button id="cancelChanges">Cancel</button>    
+            </div>
+        </form>
+    </section>
+    <div class="overlay hidden"></div>
+    <div id="header">
+        <a href="index.html" target="_self">
+            <button id="add">
+                New note
+            </button>    
+        </a>
+    </div>
+    <script src="tasks.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+main {
+    margin-top: 60px;
+}
+
+#tasksList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.taskRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('yellow_post-it.jpg');
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.taskRow p, .taskRow label, .taskRow input {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+
+
+.trash i {
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 4px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    left: 0;
+    top: 0;
+}
+
+.completedTask {
+    color: black;
+    background-image: url('green_post-it.jpg');
+
+}
+
+.notCompletedTask {
+    background-image: url('yellow_post-it.jpg');
+
+}
+
+.expiredTask {
+    background-image: url('pink_post-it2.jpg');
+}
+
+.completedTask i {
+    color: black;
+}
+
+.expiredTask i {
+    color: black;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 400px;
+    padding: 2.5rem;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background-image: url('yellow_post-it.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    z-index: 2;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #editForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#editForm input, #editForm label {
+    font-size: 1.2rem;
+    height: 1.5rem;
+}
+
+#editForm label {
+    margin-top: 12px;
+    text-align: center;
+}
+
+#editBtns {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+#editBtns button {
+    margin-top: 15px;
+    height: 50px;
+    width: 100px;
+}
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    font-size: 5rem;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #add {
+    margin-right: 20px;
+    padding: 3px;
+    border-radius: 20%;
+    background-color: chartreuse;
+    font-weight: bold;
+  }
