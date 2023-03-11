@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 main {
@@ -20,15 +20,30 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background-image: url('yellow_post-it.jpg');
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
+.taskRow p {
+    width: 80%;
+}
+
+.taskRow p:first-of-type {
+    text-decoration: underline;
+}
+
+.checkClass {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .taskRow p, .taskRow label, .taskRow input {
     margin-bottom: 8px;
@@ -37,6 +52,7 @@ main {
 
 .btnDiv {
     display: flex;
+    width: 60%;
     justify-content:space-around ;
     align-items: center;
 }
@@ -159,14 +175,13 @@ main {
     left: 0;
     top: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
 
   #add {
-    margin-right: 20px;
-    padding: 3px;
-    border-radius: 20%;
+    padding: 6px;
+    border-radius: 10%;
     background-color: chartreuse;
     font-weight: bold;
   }

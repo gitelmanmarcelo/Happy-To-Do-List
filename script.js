@@ -16,7 +16,7 @@ const onFormSubmit = (evt) => {
     else {
         toDoList = JSON.parse(toDoList);
         if (toDoList.length > 0)
-            id = toDoList[toDoList.length-1].id + 1;
+            id = toDoList.reduce( (acc,it) => { return (it.id > acc) ? it.id : acc },0) + 1;
         else
             id = 0;
     }
