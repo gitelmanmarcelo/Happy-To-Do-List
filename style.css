@@ -13,7 +13,7 @@ h1 {
 
 
 form {
-    margin-left: 16px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,10 +22,10 @@ form {
     gap: 0.4rem;
     padding: 2.5rem;
     background-image: url('yellow_post-it.jpg');
-    background-size: contain;
+    background-size: 700px;
     background-repeat: no-repeat;
-    border: 1px solid #ddd;
-    border-radius: 15px;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 15px; */
     z-index: 2;
     text-align: center;
     padding: 25px 105px;
