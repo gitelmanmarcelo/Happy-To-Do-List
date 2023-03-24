@@ -56,3 +56,35 @@ button {
     color: white;
     border: none;
 }
+
+  @media screen and (max-width: 700px) {
+    form {
+        width: 600px;
+        height: 600px;
+        background-size: 600px ;
+    }
+}
+
+  @media screen and (max-width: 600px) {
+    form {
+        width: 500px;
+        height: 500px;
+        background-size: 500px ;
+     }
+  }
+  
+  @media screen and (max-width: 500px) {
+    form {
+        width: 400px;
+        height: 400px;
+        background-size: 400px ;
+     }
+  }
+
+  @media screen and (max-width: 400px) {
+    form {
+        width: 300px;
+        height: 300px;
+        background-size: 300px ;
+     }
+  }
